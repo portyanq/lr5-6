@@ -1,13 +1,5 @@
 import templates
 
-# Реализовать два класса: User, Connection.
-# Внутри в методах реализовать CRUD (основные методы по работе с данными: select, update, insert)
-
-# класс - структура/сущность со структурой, которую реализует какой-то конкретный объект
-# например пользователь Elena или Irina
-
-
-
 
 class User():
 
@@ -32,7 +24,7 @@ class User():
         self.__name = name
 
         if name == None:
-            del self.name # Почему тут не приватная переменная??????????????????????????
+            del self.name
 
     @name.deleter
     def name(self):
@@ -66,10 +58,7 @@ print('-----')
 u1 = User('Elena', 1.69)
 u3 = User('Irina', 1.80)
 
-# u1.name = 'el'
 print(u1.name)
-
-# u1.name = "Anna"
 
 def singleton(cls):
     import functools
